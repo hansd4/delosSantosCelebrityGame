@@ -26,6 +26,18 @@ public class CelebrityGame {
      * Builds the game and starts the GUI
      */
     public CelebrityGame() {
+        init();
+    }
+
+    public CelebrityFrame getGameWindow() {
+        return gameWindow;
+    }
+
+//    public void reset() {
+//        gameWindow.dispose();
+//        CelebrityGame game = new CelebrityGame();
+//    }
+    public void init() {
         gameCelebrity = null;
         gameWindow = new CelebrityFrame(this);
         celebGameList = new ArrayList<>();
